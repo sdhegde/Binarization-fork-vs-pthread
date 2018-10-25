@@ -15,20 +15,18 @@ export PATH=$PATH:~/local/bin
 opencv_version
 ```
 
-### Make multiple copies of test_0.jpg in current directory
-Edit copy.sh: specify the "loop count" to number of copies you would want to make. Keep the loop count < number of available processors
+### Edit copy.sh and test.cpp
+* **Edit copy.sh:** Make multiple copies of test_0.jpg in current directory. specify the "loop count" to number of copies you would want to make. Keep the loop count < number of available processors
 ```
 ./copy.sh
 ```
+* **Edit test.cpp:** specify the  "loopCount" variable in main() to the number of copies you made with ./copy.sh
 
 ### Compile test.cpp
-Edit test.cpp: specify the  "loopCount" variable in main() to the number of copies you made with ./copy.sh
-
-Add "OpenCV_installation_path/share" to PATH
+For cmake to execute successfully, add "OpenCV_installation_path/share" to PATH, as in below
 ```
 export PATH=$PATH:~/local/share
 cmake3 .
 make
 ./DisplayImage
 ```
-
