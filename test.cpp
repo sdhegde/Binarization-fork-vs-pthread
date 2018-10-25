@@ -40,7 +40,11 @@ int main() {
   clock_gettime(CLOCK_MONOTONIC, &i1);
   
   char prefix[60]="./test_";   
-  int loopCount = 50; // Set loopCount <= number of available processors
+  /*
+   * Since each child should read a separate image, set loopCount variable to the number of copies made using copy.sh 
+   * Make sure that loopCount <= number of available processors, so that there is no context switching
+   */
+  int loopCount = 50; 
   
   // Code using fork()  
   for(int i=0; i<loopCount; i++){	
