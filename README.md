@@ -2,7 +2,7 @@
 Download OpenCV and install to local path using cmake. Specify the local path with -DCMAKE_INSTALL_PREFIX
 ```
 wget https://github.com/opencv/opencv/archive/3.4.3.zip
-unzip 3.4.3.zip -d ./opencv-3.4.3
+unzip opencv-3.4.3.zip
 mkdir -p opencv-3.4.3/build && cd opencv-3.4.3/build
 cmake3 -DCMAKE_BUILD_TYPE=RELEASE -DWITH_OPENMP=ON -DCMAKE_INSTALL_PREFIX=~/local ..
 make -j
