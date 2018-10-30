@@ -16,7 +16,7 @@ opencv_version
 ```
 
 ### Edit copy.sh and test.cpp
-Edit the 2 files and set loop count, say N <= number of processors.
+Edit the 2 files and set loop count to N <= number of processors.
 * **Edit copy.sh:** Edit the for loop and set to N to make N copies of test_0.jpg in current directory.
 ```
 ./copy.sh
