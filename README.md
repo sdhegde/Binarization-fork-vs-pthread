@@ -1,3 +1,6 @@
+### Purpose
+Compare the timings of fork() Vs. pthread. Unit of work for each thread or process --> colour image to binary image conversion
+
 ### Install dependent libraries
 Download OpenCV and install to local path using cmake. Specify the local path with -DCMAKE_INSTALL_PREFIX
 ```
